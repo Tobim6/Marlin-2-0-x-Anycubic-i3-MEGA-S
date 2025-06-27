@@ -130,4 +130,4 @@ jobs:
         path: |
           .pio/build/${{ matrix.platform }}/${{ matrix.platform }}_v*.hex
         # retention-days: 7            # Optional: set retention period
-          compression-level: 9         # Optional: maximum compression
+        compression-level: 9         # Optional: maximum compression
