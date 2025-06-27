@@ -1,6 +1,7 @@
 name: Build All Firmware Variants
 
 on:
+  workflow_dispatch
   #pull_request:
   #  branches:
   #  - master
@@ -21,7 +22,7 @@ on:
 jobs:
   build:
     name: Build
-    if: github.repository == 'knutwurst/Marlin-2-0-x-Anycubic-i3-MEGA-S'
+    if: github.repository == 'Tobim6/Marlin-2-0-x-Anycubic-i3-MEGA-S'
 
     runs-on: ubuntu-latest
 
