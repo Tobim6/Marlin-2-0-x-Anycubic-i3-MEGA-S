@@ -1,6 +1,14 @@
 name: Build All Firmware Variants
 
-on: workflow_dispatch
+on:
+  #pull_request:
+  #  branches:
+  #  - master
+  #  paths-ignore:
+  #  - config/**
+  #  - data/**
+  #  - docs/**
+  #  - '**/*.md'
   push:
     branches:
     - master
@@ -13,7 +21,7 @@ on: workflow_dispatch
 jobs:
   build:
     name: Build
-    if: github.repository == 'Tobim6/Marlin-2-0-x-Anycubic-i3-MEGA-S'
+    if: github.repository == 'knutwurst/Marlin-2-0-x-Anycubic-i3-MEGA-S'
 
     runs-on: ubuntu-latest
 
